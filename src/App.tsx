@@ -1,5 +1,12 @@
 function App() {
-  return <div className="App">This is app</div>;
+  const clickMe = () => {
+    console.log("Click");
+  };
+  return (
+    <div className="App">
+      <button onClick={clickMe}>Click</button>
+    </div>
+  );
 }
 
 export default App;
