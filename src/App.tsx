@@ -1,6 +1,7 @@
 function App() {
   const clickMe = () => {
     console.log("Click");
+    console.log("Click");
   };
   return (
     <div className="App">
