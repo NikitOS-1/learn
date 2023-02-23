@@ -70,6 +70,17 @@ function App() {
   //
   // -------------------------------------------------------
   // Reduce
+  // let ages = 0;
+  // for (let i = 0; i < people.length; i++) {
+  //   ages += people[i].age;
+  // }
+  // console.log(ages);
+  //
+  //
+  // const ages = people.reduce((total, person) => {
+  //   return total + person.age;
+  // }, 0);
+  // console.log(ages);
   //
   //
   // -------------------------------------------------------
