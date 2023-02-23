@@ -9,6 +9,16 @@ function App() {
     { name: "Early", age: 28, proffesion: "Credit" },
   ];
 
+  //Default work with array ES5
+  // for (let i = 0; i < people.length; i++) {
+  //   console.log(people[i]);
+  // }
+
+  //Default work with array ES6
+  // for (let person of people) {
+  //   console.log(person);
+  // }
+
   // ForEach
 
   //Map
@@ -19,7 +29,7 @@ function App() {
 
   //FindIndex
 
-  return <div className="App"></div>;
+  return <div className="App">Hello</div>;
 }
 
 export default App;
