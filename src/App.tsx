@@ -20,6 +20,11 @@ function App() {
   // }
 
   // ForEach
+  people.forEach(function (person, index, pArr) {
+    console.log(person);
+    console.log(index);
+    console.log(pArr);
+  });
 
   //Map
 
