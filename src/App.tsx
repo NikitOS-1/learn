@@ -5,20 +5,22 @@ function App() {
     { name: "Alex", age: 30, proffesion: "PM" },
     { name: "Look", age: 35, proffesion: "Sells" },
     { name: "Just", age: 32, proffesion: "Sellers" },
-    { name: "Only", age: 21, proffesion: "Auto" },
-    { name: "Early", age: 28, proffesion: "Credit" },
+    { name: "Only", age: 17, proffesion: "Auto" },
+    { name: "Early", age: 15, proffesion: "Credit" },
   ];
   // -------------------------------------------------------
-  //Default works with Array ES5
+  // Default works with Array ES5
   // for (let i = 0; i < people.length; i++) {
   //   console.log(people[i]);
   // }
   //
+  //
   // -------------------------------------------------------
-  //Default works with Array ES6
+  // Default works with Array ES6
   // for (let person of people) {
   //   console.log(person);
   // }
+  //
   //
   // -------------------------------------------------------
   // ForEach
@@ -27,11 +29,13 @@ function App() {
   //   console.log(index);
   //   console.log(pArr);
   // });
+  //---
   //
   // people.forEach((person) => console.log(person));
   //
+  //
   // -------------------------------------------------------
-  //Map
+  // Map
   // const newPeople = people.map((person) => {
   // return person;
   // return "Hello";
@@ -40,14 +44,41 @@ function App() {
   // });
   // console.log(newPeople); // metod Map return new Array
   //
-  // -------------------------------------------------------
-  //Filter
   //
   // -------------------------------------------------------
-  //Find
+  // Filter
+  // const adults = []; //ES5
+  // for (let i = 0; i < people.length; i++) {
+  //   if (people[i].age >= 18) {
+  //     adults.push(people[i]);
+  //   }
+  // }
+  // console.log(adults);
+  //---
+  //
+  // const adults = people.filter((person) => {
+  //   if (person.age >= 18) {
+  //     return true;
+  //   }
+  // });
+  // console.log(adults)
+  //---
+  //
+  // const adults = people.filter((person) => person.age >= 18);
+  // console.log(adults);
+  //
   //
   // -------------------------------------------------------
-  //FindIndex
+  // Reduce
+  //
+  //
+  // -------------------------------------------------------
+  // Find
+  //
+  //
+  // -------------------------------------------------------
+  // FindIndex
+  //
   //
   // -------------------------------------------------------
   return <div className="App">Hello</div>;
