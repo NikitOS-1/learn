@@ -8,32 +8,34 @@ function App() {
     { name: "Only", age: 21, proffesion: "Auto" },
     { name: "Early", age: 28, proffesion: "Credit" },
   ];
-
-  //Default work with array ES5
+  // -------------------------------------------------------
+  //Default work with array ES5!!!!
   // for (let i = 0; i < people.length; i++) {
   //   console.log(people[i]);
   // }
-
-  //Default work with array ES6
+  // -------------------------------------------------------
+  //Default work with array ES6!!!!
   // for (let person of people) {
   //   console.log(person);
   // }
+  // -------------------------------------------------------
+  // ForEach!!!!
+  // people.forEach(function (person, index, pArr) {
+  //   console.log(person);
+  //   console.log(index);
+  //   console.log(pArr);
+  // });
 
-  // ForEach
-  people.forEach(function (person, index, pArr) {
-    console.log(person);
-    console.log(index);
-    console.log(pArr);
-  });
-
-  //Map
-
-  //Filter
-
-  //Find
-
-  //FindIndex
-
+  // people.forEach((person) => console.log(person));
+  // -------------------------------------------------------
+  //Map!!!!
+  // -------------------------------------------------------
+  //Filter!!!!
+  // -------------------------------------------------------
+  //Find!!!!
+  // -------------------------------------------------------
+  //FindIndex!!!!
+  // -------------------------------------------------------
   return <div className="App">Hello</div>;
 }
 
