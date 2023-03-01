@@ -1,12 +1,13 @@
-import { useAppSelector } from "./hooks/hooksTypes";
+import { useAppDispatch, useAppSelector } from "./hooks/hooksTypes";
+import { increment, decrement } from "./redux/countReducer";
 
 function App() {
-  const counts = useAppSelector((state) => state.count.count);
-
+  const counts = useAppSelector((state) => state.count.value);
+  const dispatch = useAppDispatch();
   return (
     <div className="App">
-      <button>increment</button>
-      <button>decrement</button>
+      <button onClick={() => dispatch(increment())}>increment</button>
+      <button onClick={() => dispatch(decrement())}>decrement</button>
       <div>{counts}</div>
     </div>
   );
