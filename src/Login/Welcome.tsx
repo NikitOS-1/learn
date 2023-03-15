@@ -1,4 +1,9 @@
 const Welcome = () => {
-  return <div>Welcome</div>;
+  return (
+    <div>
+      <div>Welcome</div>
+      <button>Log Out</button>
+    </div>
+  );
 };
 export default Welcome;
