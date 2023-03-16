@@ -7,8 +7,8 @@ import { useNavigate } from "react-router-dom";
 const Login = () => {
   let push = useNavigate();
   const dispatch = useAppDispatch();
-  //@ts-ignore
-  const handleLogin = (email, password) => {
+
+  const handleLogin = (email: string, password: string) => {
     const auth = getAuth();
     signInWithEmailAndPassword(auth, email, password)
       .then(({ user }) => {
@@ -17,7 +17,7 @@ const Login = () => {
           setUser({
             email: user.email,
             id: user.uid,
-            tokken: "222",
+            tokken: user.refreshToken,
           })
         );
         push("/");

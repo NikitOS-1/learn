@@ -7,8 +7,8 @@ import { useNavigate } from "react-router-dom";
 const SignUp = () => {
   let push = useNavigate();
   const dispatch = useAppDispatch();
-  //@ts-ignore
-  const handleRegister = (email, password) => {
+
+  const handleRegister = (email: string, password: string) => {
     const auth = getAuth();
     createUserWithEmailAndPassword(auth, email, password)
       .then(({ user }) => {
@@ -17,7 +17,7 @@ const SignUp = () => {
           setUser({
             email: user.email,
             id: user.uid,
-            tokken: "111",
+            tokken: user.refreshToken,
           })
         );
         push("/");
