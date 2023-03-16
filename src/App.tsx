@@ -1,17 +1,16 @@
 import { Route, Routes } from "react-router-dom";
-import Registration from "./pages/Login/Registration";
-import SignUp from "./pages/Login/SignUp";
-import Welcome from "./pages/Login/Welcome";
+import RegistrationPage from "./pages/Login/RegistrationPage";
+import LoginPage from "./pages/Login/LoginPage";
+import HomePage from "./pages/Login/HomePage";
 
 function App() {
   return (
     <div className="App">
       <Routes>
-        <Route path="/" element={<SignUp />} />
-        <Route path="/Registration" element={<Registration />} />
-        <Route path="/Welcome" element={<Welcome />} />
+        <Route path="/" element={<HomePage />} />
+        <Route path="/login" element={<LoginPage />} />
+        <Route path="/registration" element={<RegistrationPage />} />
       </Routes>
-      <Welcome />
     </div>
   );
 }

@@ -1,4 +1,6 @@
-const Registration = () => {
+import { Link } from "react-router-dom";
+
+const RegistrationPage = () => {
   return (
     <div>
       <form action="">
@@ -25,7 +27,12 @@ const Registration = () => {
         <br />
         <button>Registration</button>
       </form>
+      <div>
+        <p>
+          If you have account <Link to={"/login"}>Sign Up</Link>
+        </p>
+      </div>
     </div>
   );
 };
-export default Registration;
+export default RegistrationPage;

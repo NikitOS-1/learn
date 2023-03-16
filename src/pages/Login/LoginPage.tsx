@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-const SignUp = () => {
+const LoginPage = () => {
   return (
     <div>
       <form action="">
@@ -13,13 +13,11 @@ const SignUp = () => {
           <input type="text" placeholder="password" />
         </div>
         <br />
-        <br />
         <button>Login</button>
         <br />
-        <br />
-        <Link to={"/Registration"}>Create account</Link>
+        <Link to={"/registration"}>Create account</Link>
       </form>
     </div>
   );
 };
-export default SignUp;
+export default LoginPage;

@@ -1,12 +1,12 @@
 import { Navigate } from "react-router-dom";
 
-const Welcome = () => {
+const HomePage = () => {
   return (
     <div>
-      <Navigate to={"/"} />
-      <div>Welcome</div>
+      <Navigate to={"/login"} />
+      <div>HomePage</div>
       <button>Log Out</button>
     </div>
   );
 };
-export default Welcome;
+export default HomePage;
