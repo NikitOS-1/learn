@@ -17,7 +17,7 @@ const Form = ({ title, handleClick }) => {
         onChange={(e) => setPass(e.target.value)}
         placeholder="password"
       />
-      <button onClick={handleClick}>{title}</button>
+      <button onClick={() => handleClick(email, pass)}>{title}</button>
     </div>
   );
 };
