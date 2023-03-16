@@ -1,5 +1,5 @@
 import { useAppDispatch } from "hooks/hooksTypes";
-import { useAuth } from "hooks/use-auth";
+import { useAuth } from "hooks/useAuth";
 import { Navigate } from "react-router-dom";
 import { removeUser } from "redux/slice/userSlice";
 
