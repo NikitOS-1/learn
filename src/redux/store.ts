@@ -3,7 +3,7 @@ import userSlice from "./slice/userSlice";
 
 export const store = configureStore({
   reducer: {
-    // @ts-ignore
+    //@ts-ignore
     user: userSlice,
   },
 });
