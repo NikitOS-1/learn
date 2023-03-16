@@ -5,7 +5,7 @@ import Form from "./Form";
 import { useNavigate } from "react-router-dom";
 
 const SignUp = () => {
-  let history = useNavigate();
+  let push = useNavigate();
   const dispatch = useAppDispatch();
   //@ts-ignore
   const handleRegister = (email, password) => {
@@ -20,7 +20,7 @@ const SignUp = () => {
             tokken: "111",
           })
         );
-        history("/");
+        push("/");
       })
       .catch(console.error);
   };
