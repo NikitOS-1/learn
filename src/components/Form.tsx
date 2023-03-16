@@ -1,6 +1,11 @@
 import { useState } from "react";
-// @ts-ignore
-const Form = ({ title, handleClick }) => {
+
+interface FormProps {
+  title: string;
+  handleClick: (email: string, pass: string) => void;
+}
+
+const Form = ({ title, handleClick }: FormProps) => {
   const [email, setEmail] = useState<any>("");
   const [pass, setPass] = useState<any>("");
   return (
