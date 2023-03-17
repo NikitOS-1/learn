@@ -1,5 +1,5 @@
 import { useAppDispatch } from "../hooks/hooksTypes";
-import { setUser } from "../redux/slice/userSlice";
+import { setUser } from "../redux/userSlice";
 import { getAuth, createUserWithEmailAndPassword } from "firebase/auth";
 import Form from "./Form";
 import { useNavigate } from "react-router-dom";
@@ -12,7 +12,6 @@ const SignUp = () => {
     const auth = getAuth();
     createUserWithEmailAndPassword(auth, email, password)
       .then(({ user }) => {
-        console.log(user);
         dispatch(
           setUser({
             email: user.email,
