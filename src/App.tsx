@@ -6,11 +6,11 @@ import HomePage from "./pages/Authentication/HomePage";
 function App() {
   return (
     <div className="App">
-      <Routes>
-        <Route path="/" element={<HomePage />} />
+      {/* <Routes> */}
+      {/* <Route path="/" element={<HomePage />} />
         <Route path="/login" element={<LoginPage />} />
-        <Route path="/registration" element={<RegistrationPage />} />
-      </Routes>
+        <Route path="/registration" element={<RegistrationPage />} /> */}
+      {/* </Routes> */}
     </div>
   );
 }
