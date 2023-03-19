@@ -11,10 +11,8 @@ function App() {
     setCount((state) => state + 1);
   };
   useEffect(() => {
-    if (count == 2) {
-      console.log(count);
-    }
-  });
+    console.log("rerender");
+  }, [count]);
   return (
     <div className="App">
       <div>count:{count}</div>
